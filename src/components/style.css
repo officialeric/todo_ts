@@ -103,7 +103,9 @@
     border: none;
     font-size: 20px;
   }
-  
+  .icons {
+    display: flex;
+  }
   .todos__single--text:focus {
     outline: none;
   }
@@ -113,7 +115,10 @@
     font-size: 25px;
     cursor: pointer;
   }
-  
+  .text {
+    width: 4em ;
+    overflow-x: hidden;
+  }
   @media (max-width: 1100px) {
     .todos {
       width: 45%;

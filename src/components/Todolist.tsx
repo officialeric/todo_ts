@@ -1,5 +1,6 @@
 import './style.css'
 import { Todo } from '../models'
+import SingleTodo from './SingleTodo';
 
  interface Props {
     todos : Todo[];
@@ -10,9 +11,7 @@ const Todolist = ({todos , setTodos} : Props) => {
   return (
     <div className='todos'>
         {todos.map((todo) => (
-            <li>
-                {todo.todo}
-            </li>
+            <SingleTodo todo={todo} key={todo.id} todos={todos} setTodos={setTodos}/>
         ))}
     </div>
   )
